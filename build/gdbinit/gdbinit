@@ -1,0 +1,2 @@
+source /home/panda/esp/MEP-1-led/build/gdbinit/symbols
+source /home/panda/esp/MEP-1-led/build/gdbinit/connect

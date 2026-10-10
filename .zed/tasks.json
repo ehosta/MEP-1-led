@@ -1,0 +1,7 @@
+[
+  { "label": "build", "command": "idf.py build" },
+  {
+    "label": "flash+monitor",
+    "command": "idf.py -p /dev/ttyUSB0 flash monitor",
+  },
+]
