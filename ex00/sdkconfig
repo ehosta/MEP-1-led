@@ -432,6 +432,15 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Project parameters
+#
+CONFIG_LED_PERIOD_MS=500
+CONFIG_SHORT_DIVIDER_VALUE=2
+CONFIG_SOS_PAUSE=1500
+CONFIG_IS_BONUS=y
+# end of Project parameters
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEBUG=y

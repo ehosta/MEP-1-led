@@ -1,0 +1,20 @@
+menu "Project parameters"
+    config LED_PERIOD_MS
+        int "Base for bip duration"
+        default 500
+
+    config SHORT_DIVIDER_VALUE
+        int "Divide LED_PERIOD_MS for short morse bips"
+        default 2
+        depends on IS_BONUS
+
+    config SOS_PAUSE
+        int "The time in ms between two SOS"
+        default 1500
+        depends on IS_BONUS
+
+    config IS_BONUS
+        bool "If the bonus part should be tested"
+        default y
+
+endmenu
