@@ -1,7 +1,11 @@
+// Run from any file inside an exercise: finds the exNN folder containing it
 [
-  { "label": "build", "command": "idf.py build" },
+  {
+    "label": "build",
+    "command": "d=\"$ZED_DIRNAME\"; while [ ! -f \"$d/sdkconfig\" ] && [ \"$d\" != / ]; do d=$(dirname \"$d\"); done; idf.py -C \"$d\" build"
+  },
   {
     "label": "flash+monitor",
-    "command": "idf.py -p /dev/ttyUSB0 flash monitor",
-  },
+    "command": "d=\"$ZED_DIRNAME\"; while [ ! -f \"$d/sdkconfig\" ] && [ \"$d\" != / ]; do d=$(dirname \"$d\"); done; idf.py -C \"$d\" -p /dev/ttyUSB0 flash monitor"
+  }
 ]

@@ -2,8 +2,8 @@
   "lsp": {
     "clangd": {
       "binary": {
-        "arguments": ["--query-driver=/home/TOI/.espressif/tools/**"],
-      },
-    },
-  },
+        "arguments": ["--query-driver=/home/panda/.espressif/tools/**/bin/*-gcc"]
+      }
+    }
+  }
 }
