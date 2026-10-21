@@ -10,6 +10,7 @@ MEP-1-led est le premier projet de la suite de projets MEP. Dans ce projet, il y
 ## Calcule de R1
 
 J'ai utilisé la loi d'Ohm pour déterminer R1.
+```
 R = U / I
 R = (V_alim - V_LED) / I_LED
 
@@ -18,11 +19,13 @@ V_LED : la tension de seuil de la LED, 2 V pour du rouge
 I_LED : le courant voulu, en ampères, ici 6 mA
 
 R = (3,3 - 2) / 0,006 ≈ 218 Ω
+```
 
-La puissance dissipee se mesure en watts :
-
+La puissance dissipée se mesure en watts :
+```
 P = U x I, ou avec la loi d'Ohm, P = R x I²
 220 × 0,006² ≈ 0,008 W
+```
 
 ## Pourquoi app_main et pas main ?
 
